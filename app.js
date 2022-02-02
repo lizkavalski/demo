@@ -52,7 +52,6 @@ function movies(){
   while(tries < 3){
     let movies = prompt('how many star wars movies are there?')
     if(parseInt(movies)  === 11){
-      alert('you are right')
       break
     }
     else if( parseInt(movies)  >= 11){
