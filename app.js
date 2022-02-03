@@ -3,6 +3,7 @@
 
 let name = prompt('what is your name?');
 
+// Example of function that require a input, or a parameter, or sometype of value. 
 function game(name){
   let anwser = prompt('Do you want to play a game '+ name + '?');
   if (anwser.toLowerCase() === 'yes'){
@@ -34,9 +35,7 @@ function pickANumber(){
   for(let i = 0; i<= 3; i++){
     let number = prompt('Pick a number between 1 and 20')
     if(parseInt(number)  === 10){
-      return number
-      break;
-      
+      return number 
     }
     else if( parseInt(number)  >= 10){
       alert('too high');
@@ -60,7 +59,7 @@ function movies(){
   while(tries < 3){
     let movies = prompt('how many star wars movies are there?')
     if(parseInt(movies)  === 11){
-      break;
+      return movies
     }
     else if( parseInt(movies)  >= 11){
       alert('too high');
@@ -93,11 +92,16 @@ function city(){
   while(answer.toLowerCase() !== 'seattle');
 }
 
-game(name);
-color();
-pickANumber();
-movies();
-city()
+// for loop with an img
+
+function displayRateing(){
+  let output = '';
+  let rating=prompt("how would you rate this wedsite from 1-5");
+  for(let i =0; i < rating; i++){
+    output= output + "<img src='image/download.png'>"
+  }
+  return document.write(output)
+}
 
 
 
