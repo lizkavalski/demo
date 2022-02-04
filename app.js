@@ -20,7 +20,7 @@ function game(name){
 function color() {
   let anwser = prompt('What your favorite color')
   if (anwser.toLowerCase() === 'pink'){
-    alert('Mine is to');
+    alert('Mine is too');
     return anwser
 
   }
