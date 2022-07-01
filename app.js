@@ -8,11 +8,10 @@ function game(name){
   let anwser = prompt('Do you want to play a game '+ name + '?');
   if (anwser.toLowerCase() === 'yes'){
     alert('lets play');
-    return anwser
   }
- else if( anwser.toLowerCase() === 'no'){
+  else if( anwser.toLowerCase() === 'no'){
     alert('You have no choice');
-    return anwser
+    game(name);
 
   }
 };
